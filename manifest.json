@@ -1,0 +1,18 @@
+{
+  "manifest_version": 2,
+  "name": "YT Advanced Customizer",
+  "version": "1.0",
+  "description": "Customize Youtube with advanced capabilities",
+  "permissions": ["storage", "tabs", "https://www.youtube.com/*"],
+  "browser_action": {
+    "default_title": "YT Advanced Customizer",
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://www.youtube.com/*"],
+      "run_at": "document_end",
+      "js": ["content.js"]
+    }
+  ]
+}

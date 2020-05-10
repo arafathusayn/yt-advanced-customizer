@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>YT Advanced Customizer</title>
+  </head>
+  <style>
+    body {
+      width: 300px;
+    }
+    input {
+      width: 280px;
+    }
+    button {
+      background-color: white;
+      color: black;
+      border: 2px solid #1bbc9b;
+      width: 99%;
+    }
+    button:hover {
+      background-color: #1bbc9b;
+      color: white;
+      font-weight: bold;
+      border: 2px solid #1bbc9b;
+    }
+    button:focus {
+      outline: 2px solid #1bbc9b;
+      border: 2px solid #1bbc9b;
+    }
+    div {
+      margin-top: 10px;
+    }
+    #customButton {
+      display: block;
+      margin-top: 15px;
+    }
+  </style>
+  <body>
+    <div id="customType">
+      <p id="customHint">API Key:</p>
+      <input
+        type="text"
+        id="apiKey"
+        value=""
+        placeholder="Paste your API key here"
+      />
+      <p id="customHint2">Country Blacklist:</p>
+      <input
+        type="text"
+        id="countryBlacklist"
+        value=""
+        placeholder="eg. IN, PK, BD, X"
+      />
+      <p id="customHint3">Channel ID Blacklist:</p>
+      <input
+        type="text"
+        id="channelIdBlacklist"
+        value=""
+        placeholder="eg. UCVkXfARLNI0vf7gajoDDjlw, UCjeD2I8jwXg2l_nvXb_6Hzw"
+      />
+      <button id="customButton">Save</button>
+    </div>
+
+    <script src="popup.js"></script>
+  </body>
+</html>
